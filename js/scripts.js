@@ -15,11 +15,17 @@ var counter = function(userNumber) {
   return(output);
 };
 
+
+
 $(document).ready(function() {
   $("form#ping-pong").submit(function(event) {
     event.preventDefault();
     var userNumber = parseInt($("input#userNumber").val());
     var results = counter(userNumber)
-    $("#result").text(results);
+    results.forEach(function(results) {
+      $("#result").append("<li>" + results + "</li>");
+    });
+
+    // $("#result").text(results);
   });
 });
