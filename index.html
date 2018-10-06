@@ -12,14 +12,17 @@
     <form id="ping-pong">
       <div class="form-group">
         <label for="year">Enter a number:</label>
-        <input id="userNumber" type="number">
+        <input id="userNumber" type="number" required>
       </div>
 
       <button type="submit" class="btn">Submit!</button>
     </form>
 
     <div id="result">
-      
+      <p>Here are your results!</p>
+      <button type="reset" class="btn" "reload" onclick="location.reload()">Try again?</button>
+      <ul class = list>
+      </ul>
     </div>
   </div>
 </body>
