@@ -1,3 +1,50 @@
 #result {
   display: none;
+  background-color: white;
+  opacity: 0.8;
+  width: 12%;
+  padding: 15px 30px 30px 30px;
+  border-radius: 25px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-width: 5px;
+  border-color: black;
+  text-align: center;
+}
+
+body {
+  background-image: url("../img/table.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #c6c99d;
+}
+
+.playArea {
+  background-color: white;
+  opacity: 0.8;
+  width: 20%;
+  padding: 20px 20px 20px 20px;
+  border-radius: 25px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-width: 5px;
+  border-color: black;
+  text-align: center;
+}
+
+h1, h3 {
+  text-align: center;
+  text-emphasis: bold;
+}
+
+.list {
+  text-align: left;
+}
+
+.btn {
+  margin: 5px 5px 5px 5px;
+  padding: 3px 3px 3px 3px;
 }

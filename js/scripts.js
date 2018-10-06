@@ -3,11 +3,11 @@ var counter = function(userNumber) {
 
   for (var countNumber = 1; countNumber <= userNumber; countNumber += 1) {
     if (countNumber % 5 === 0 && countNumber % 3 === 0) {
-      output.push("pingpong");
+      output.push("PING-PONG");
     } else if (countNumber % 5 === 0) {
-      output.push("pong");
+      output.push("PONG");
     } else if (countNumber % 3 === 0) {
-      output.push("ping");
+      output.push("PING");
     } else {
       output.push(countNumber);
     }
