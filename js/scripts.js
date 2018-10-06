@@ -12,6 +12,7 @@ var counter = function(userNumber) {
     }
   }
   console.log(output);
+  return(output);
 };
 
 $(document).ready(function() {
@@ -19,7 +20,6 @@ $(document).ready(function() {
     event.preventDefault();
     var userNumber = parseInt($("input#userNumber").val());
     var results = counter(userNumber)
-    console.log(userNumber)
     $("#result").text(results);
   });
 });
