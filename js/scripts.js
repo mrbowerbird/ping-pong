@@ -1,19 +1,33 @@
 var output = [];
 var counter = function(userNumber) {
-
-  for (var countNumber = 1; countNumber <= userNumber; countNumber += 1) {
-    if (countNumber % 5 === 0 && countNumber % 3 === 0) {
-      output.push("PING-PONG");
-    } else if (countNumber % 5 === 0) {
-      output.push("PONG");
-    } else if (countNumber % 3 === 0) {
-      output.push("PING");
-    } else {
-      output.push(countNumber);
-    }
+for (var countNumber = 1; countNumber <= userNumber; countNumber += 1) {
+  if (countNumber % 5 === 0 && countNumber % 3 === 0) {
+    output.push("PING-PONG");
+  } else if (countNumber % 5 === 0) {
+    output.push("PONG");
+  } else if (countNumber % 3 === 0) {
+    output.push("PING");
+  } else {
+    output.push(countNumber);
   }
-  return(output);
+}
+return(output);
 };
+
+$(document).ready(function() {
+  $("form#ping-pong").submit(function(event) {
+    event.preventDefault();
+    var userNumber = parseInt($("input#userNumber").val());
+    var results = counter(userNumber)
+    results.forEach(function(results) {
+      $(".list").append("<li>" + results + "</li>");
+    });
+    $("#result").show(results);
+    $("#ping-pong").hide();
+  });
+});
+
+// Maybe later
 // var pings = [];
 // var pingCounter = function(results) {
 // var count = 0;
@@ -23,19 +37,3 @@ var counter = function(userNumber) {
 //         pings.push(count);
 // }
 // };
-
-$(document).ready(function() {
-  $("form#ping-pong").submit(function(event) {
-    event.preventDefault();
-    var userNumber = parseInt($("input#userNumber").val());
-    var results = counter(userNumber)
-    results.forEach(function(results) {
-      $(".list").append("<li>" + results + "</li>");
-      // var pingsCount = pingCounter(results);
-      // console.log(pingsCount)
-    });
-
-    $("#result").show(results);
-    $("#ping-pong").hide();
-  });
-});
