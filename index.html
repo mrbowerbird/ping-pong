@@ -11,17 +11,19 @@
     <h3>Just like the real thing!</h3>
     <form id="ping-pong">
       <div class="playArea">
-        <label for="year">Enter a number:</label>
-        <input id="userNumber" type="number" required>
+        <label for="userNumber">Enter a number:</label>
+        <input id="userNumber" type="number" max="9999" min="1" required>
         <button type="submit" class="btn">Submit!</button>
       </div>
     </form>
-
     <div id="result">
       <p><em>Here are your results!</em></p>
       <button type="reset" class="btn" "reload" onclick="location.reload()">Try again?</button>
       <ul class = list>
       </ul>
+    </div>
+    <div id="rules">
+     <button id="rulesButton" class="btn">The rules</button>
     </div>
   </div>
 </body>

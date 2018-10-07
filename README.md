@@ -18,7 +18,7 @@
 | :-------------     | :------------- | :------------- |
 | **Homepage** | User accesses localhost:5004 | Homepage with user input form |
 | **Program gathers User Input** | User input: "1" | Output: "1" |
-| **Program alerts user if non number used**| User Input: "help me" | Output: "Please enter only a number!" |
+| **Program alerts user if non number used**| User Input: "help me" | Output: "Please enter a number" |
 | **Program returns all numbers up to user input**| Input: "2" | Output: "1, 2" |
 | **Program returns "ping" for numbers divisible by 3** | Input: "3" | Output: "1, 2, ping" |
 | **Program returns "pong" for numbers divisible by 5** | Input: "5" | Output: "1, 2, ping, 4, pong" |
