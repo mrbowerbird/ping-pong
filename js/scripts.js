@@ -26,8 +26,8 @@ $(document).ready(function() {
     $("#ping-pong").hide();
   });
   $("#rulesButton").click(function() {
-      alert("Here are the rules");
-    });
+    $("#rules").show()
+  });
 });
 
 // Maybe later

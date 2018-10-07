@@ -10,7 +10,7 @@
     <h1>Ping Pong</h1>
     <h3>Just like the real thing!</h3>
     <form id="ping-pong">
-      <div class="playArea">
+      <div class="submitBox">
         <label for="userNumber">Enter a number:</label>
         <input id="userNumber" type="number" max="9999" min="1" required>
         <button type="submit" class="btn">Submit!</button>
@@ -22,8 +22,16 @@
       <ul class = list>
       </ul>
     </div>
+    <div id ="ruler">
+      <button id="rulesButton" class="btn">The rules</button>
+    </div>
     <div id="rules">
-     <button id="rulesButton" class="btn">The rules</button>
+      <p>Enter a number between 1 and 9999.  I'll return numbers from 1 to your number with the following exceptions:</p>
+      <ul>
+        <li>Numbers divisible by 3 are replaced with "PING"</li>
+        <li>Numbers divisible by 5 are replaced with "PONG"</li>
+        <li>Numbers divisible by 15 are replaced with "PING-PONG"</li>
+      </ul>
     </div>
   </div>
 </body>
