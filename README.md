@@ -16,7 +16,6 @@
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **Homepage** | User accesses localhost:5004 | Homepage with user input form |
 | **Program gathers User Input** | User input: "1" | Output: "1" |
 | **Program alerts user if non number used**| User Input: "help me" | Output: "Please enter a number" |
 | **Program returns all numbers up to user input**| Input: "2" | Output: "1, 2" |
@@ -26,7 +25,10 @@
 
 ## Setup/Installation Requirements
 
-1. None yet.
+*Use Terminal or equivalent (Gitbash, etc)
+*Clone repository https://github.com/mrbowerbird/ping-pong.git
+*Open in text editor (Atom for example) for code
+*To use front end, locate index.html file after cloning and open it in a web browser
 
 ## Known Bugs
 * No known bugs at this time.
